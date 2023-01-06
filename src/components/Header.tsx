@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../svgs/logo";
 import tw from "twin.macro";
 import Link from "next/link";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -7,6 +6,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import Navigation from "./Navigation";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -14,7 +14,7 @@ const Header = () => {
     <MainHeader>
       <Container>
         <InnerHeader>
-          <Logo />
+          <Image src="/images/Logo.png" width={153} height={57} alt="" />
           <InfoHeader>
             <div>
               <select className="bg-[#f6f6f6]">
@@ -28,19 +28,19 @@ const Header = () => {
             <div className="grid grid-cols-4 gap-5">
               <InstagramIcon
                 sx={{ color: "#30AAE2" }}
-                className=" cursor-pointer hover:scale-125"
+                className="cursor-pointer hover:scale-125"
               />
               <FacebookIcon
                 sx={{ color: "#30AAE2" }}
-                className=" cursor-pointer hover:scale-125"
+                className="cursor-pointer hover:scale-125"
               />
               <YouTubeIcon
                 sx={{ color: "#30AAE2" }}
-                className=" cursor-pointer hover:scale-125"
+                className="cursor-pointer hover:scale-125"
               />
               <TelegramIcon
                 sx={{ color: "#30AAE2" }}
-                className=" cursor-pointer hover:scale-125"
+                className="cursor-pointer hover:scale-125"
               />
             </div>
           </InfoHeader>
