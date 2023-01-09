@@ -1,14 +1,12 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel,Navigation } from "swiper";
-// Import Swiper styles
+            import { Mousewheel,Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import tw from "twin.macro";
-
-// import required modules
 import { Pagination } from "swiper";
 import Image from "next/image";
+
 function AboutSwiper() {
 
   return (

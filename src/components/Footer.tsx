@@ -6,7 +6,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import Image from 'next/image';
 const Footer = () => {
   return (
-    <div className="bg-black py-[38px]">
+    <div className="bg-black py-[38px] z-50 relative">
         <Container>
             <div className="flex items-center justify-between">
                 <div><Image src="/images/Logo.png" width={153} height={57} alt="" /></div>

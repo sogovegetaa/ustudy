@@ -8,6 +8,7 @@ import Image from "next/image";
 import AboutSwiper from "../../components/AboutSwiper";
 import AboutBlocks from "../../components/AboutBlocks";
 import Filials from "../../components/Filials";
+import Button from "../../components/Button";
 function about() {
   return (
     <div>
@@ -28,7 +29,7 @@ function about() {
               частных инвестиции.
             </div>
             <div className="flex flex-wrap pt-[25px] items-center pb-[59px]">
-              <GetConsultation>Получить консультацию</GetConsultation>
+              <GetConsultation>Получить консультацию </GetConsultation>
               <PlayButton>
                 <PlayArrowIcon />
               </PlayButton>

@@ -3,13 +3,19 @@ import Link from 'next/link';
 import React from 'react'
 let arr = [
     {
+      id: 1,
       title: "НКТ (дошкольное)НКТ (доп. образование)",
+      link: "/teachers/nkt"
     },
     {
+      id: 2,
       title: "Педагогика/Методика обучения",
+      link: "/teachers/methods"
     },
     {
+      id: 3,
       title: "Резерв директоров",
+      link: "/teachers/reserve"
     }
   ];
 function ForTeachersBlock() {
@@ -18,7 +24,7 @@ function ForTeachersBlock() {
     <div>
       <div className="grid grid-cols-3 gap-5 ">
         {arr.map((item) => (
-          <div className="z-20 flex flex-col items-center mt-6 bg-white shadow-xl rounded-xl">
+          <div key={item.id} className="z-20 flex flex-col items-center mt-6 bg-white shadow-xl rounded-xl">
             <Image
               src="/images/ustudy-logo.png"
               width={172}
@@ -27,7 +33,7 @@ function ForTeachersBlock() {
               className="pt-[64px] pb-[30px]"
             />
             <p className="text-lg font-medium pb-[38px] text-center px-12">{item.title}</p>
-            <Link href="#">
+            <Link href={`${item.link}`} target="_blank" >
               <p className="text-lg font-medium pb-[38px] text-[#30AAE2]">
                 Перейти
               </p>

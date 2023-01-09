@@ -1,10 +1,10 @@
-import Image from "next/image";
-import React from "react";
-import tw from "twin.macro";
-import ForStudentBlock from "./ForStudentBlock";
-import ForTeachersBlock from "./ForTeachersBlock";
-import ForAnotherBlock from "./ForAnotherBlock";
-import Footer from "./Footer";
+import Image from 'next/image';
+import React from 'react';
+import tw from 'twin.macro';
+import ForStudentBlock from './ForStudentBlock';
+import ForTeachersBlock from './ForTeachersBlock';
+import ForAnotherBlock from './ForAnotherBlock';
+import Footer from './Footer';
 function ForStudents() {
   return (
     <>
@@ -52,7 +52,7 @@ function ForStudents() {
         </Container>
       </div>
       <div className="relative">
-      <Image
+        <Image
           src="/images/bg-img.png"
           width={154}
           height={64}
@@ -74,7 +74,7 @@ function ForStudents() {
         </Container>
       </div>
       <div className="relative pb-[90px]">
-      <Image
+        <Image
           src="/images/bg-img.png"
           width={154}
           height={64}
@@ -90,7 +90,7 @@ function ForStudents() {
         />
         <Container>
           <h1 className="text-[48px] text-[#383736] font-bold uppercase pb-[25px] mt-10">
-          Тесты для студентов/ прочие тесты
+            Тесты для студентов/ прочие тесты
           </h1>
           <ForAnotherBlock />
         </Container>

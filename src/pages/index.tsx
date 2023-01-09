@@ -1,13 +1,13 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import tw from "twin.macro";
-import Header from "../components/Header";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import Link from "next/link";
-import Filials from "../components/Filials";
-import Eye from "@mui/icons-material/RemoveRedEyeOutlined";
-import Footer from "../components/Footer";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import tw from 'twin.macro';
+import Header from '../components/Header';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Link from 'next/link';
+import Filials from '../components/Filials';
+import Eye from '@mui/icons-material/RemoveRedEyeOutlined';
+import Footer from '../components/Footer';
 const Home: NextPage = () => {
   return (
     <>
@@ -34,10 +34,10 @@ const Home: NextPage = () => {
         <Container>
           <div className="grid grid-cols-4 gap-8">
             <TestBlock>
-              <div className="text-xl flex justify-between items-center pb-5">
-                Тесты образований
-                <Link href="#">
-                  <p className="text-black bg-white rounded-full relative p-1 text-sm">
+              <div className="flex items-center justify-between pb-5 text-xl">
+                Тесты в образований
+                <Link href="/education">
+                  <p className="relative p-1 text-sm text-black bg-white rounded-full">
                     <ArrowForwardIcon />
                   </p>
                 </Link>
@@ -53,10 +53,10 @@ const Home: NextPage = () => {
               </div>
             </TestBlock>
             <TestBlock>
-              <div className="text-xl flex justify-between items-center pb-5">
-                Международные тесты{" "}
+              <div className="flex items-center justify-between pb-5 text-xl">
+                Международные тесты{' '}
                 <Link href="#">
-                  <p className="text-black bg-white rounded-full relative p-1 text-sm">
+                  <p className="relative p-1 text-sm text-black bg-white rounded-full">
                     <ArrowForwardIcon />
                   </p>
                 </Link>
@@ -72,10 +72,10 @@ const Home: NextPage = () => {
               </div>
             </TestBlock>
             <TestBlock>
-              <div className="text-xl flex justify-between items-center pb-5">
-                Курсы и обучение{" "}
+              <div className="flex items-center justify-between pb-5 text-xl">
+                Курсы и обучение{' '}
                 <Link href="#">
-                  <p className="text-black bg-white rounded-full relative p-1 text-sm">
+                  <p className="relative p-1 text-sm text-black bg-white rounded-full">
                     <ArrowForwardIcon />
                   </p>
                 </Link>
@@ -91,10 +91,10 @@ const Home: NextPage = () => {
               </div>
             </TestBlock>
             <TestBlock>
-              <div className="text-xl flex justify-between items-center pb-5">
-                Пробные тесты{" "}
+              <div className="flex items-center justify-between pb-5 text-xl">
+                Пробные тесты{' '}
                 <Link href="#">
-                  <p className="text-black bg-white rounded-full relative p-1 text-sm">
+                  <p className="relative p-1 text-sm text-black bg-white rounded-full">
                     <ArrowForwardIcon />
                   </p>
                 </Link>
@@ -118,7 +118,7 @@ const Home: NextPage = () => {
           <span className="text-[#30aae2]">О нашей</span> компании
         </h1>
         <div className="grid grid-cols-3 gap-5">
-          <div className="flex flex-col  justify-center">
+          <div className="flex flex-col justify-center">
             <p className="text-[#383736] col-span-1 text-lg  font-medium">
               Сеть UStudy состоит из 56 региональных центров тестирования,
               расположенных в 3 городах республиканского значения, 14 областных
@@ -127,14 +127,14 @@ const Home: NextPage = () => {
               создание сети инфраструктуры было привлечено более 8 млрд. тенге
               частных инвестиции.
             </p>
-            <div className="pt-10 uppercase font-bold text-lg flex">
+            <div className="flex pt-10 text-lg font-bold uppercase">
               <p>Подробнее</p>
-              <p className="text-white bg-black rounded-full relative p-1 text-sm ml-10 cursor-pointer">
+              <p className="relative p-1 ml-10 text-sm text-white bg-black rounded-full cursor-pointer">
                 <ArrowForwardIcon />
               </p>
             </div>
           </div>
-          <div className="col-span-2 flex justify-end">
+          <div className="flex justify-end col-span-2">
             <Image src="/images/about-us.png" width={700} height={430} alt="" />
           </div>
         </div>
@@ -161,14 +161,14 @@ const Home: NextPage = () => {
                   alt=""
                 />
               </div>
-              <p className="text-base mt-5 mb-4 flex justify-between ">
+              <p className="flex justify-between mt-5 mb-4 text-base ">
                 <span>15.12.2021</span>
                 <span>
                   <Eye />
                   10
                 </span>
               </p>
-              <p className="text-2xl mb-3 ">Это текст компании</p>
+              <p className="mb-3 text-2xl ">Это текст компании</p>
               <p className="text-base ">
                 Это текст о компании. Он необходим для дальнейшего продвижения
                 Вашего сайта. Вам будет необходимо предоставить исходные данные,
@@ -190,14 +190,14 @@ const Home: NextPage = () => {
                   alt=""
                 />
               </div>
-              <p className="text-base mt-5 mb-4 flex justify-between ">
+              <p className="flex justify-between mt-5 mb-4 text-base ">
                 <span>15.12.2021</span>
                 <span>
                   <Eye />
                   10
                 </span>
               </p>
-              <p className="text-2xl mb-3 ">Это текст компании</p>
+              <p className="mb-3 text-2xl ">Это текст компании</p>
               <p className="text-base ">
                 Это текст о компании. Он необходим для дальнейшего продвижения
                 Вашего сайта. Вам будет необходимо предоставить исходные данные,
@@ -213,7 +213,7 @@ const Home: NextPage = () => {
           </div>
         </Container>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
@@ -222,7 +222,7 @@ container
 mx-auto
 `;
 const TestBlock = tw.div`
-bg-[#30AAE2] rounded-2xl pt-[60px] pb-[30px] px-[20px] mt-12 text-white hover:opacity-80 duration-200 z-50
+bg-[#30AAE2] rounded-2xl pt-[60px] pb-[30px] px-[20px] mt-12 text-white hover:opacity-80 duration-200 z-40
 `;
 
 export default Home;
