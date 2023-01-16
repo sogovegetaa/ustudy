@@ -52,7 +52,6 @@ function Linguaskill() {
     country: "",
     created_date: Tdate,
   });
-
   function submit(data: any) {
     const formData = new FormData();
     console.log(data);

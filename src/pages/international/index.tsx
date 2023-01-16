@@ -54,14 +54,14 @@ function international() {
             width={212}
             height={212}
             alt=""
-            className="absolute top-0 right-0 z-20"
+            className="absolute top-0 right-0 z-20 hidden md:block"
           />
-          <div className=" text-[48px] font-bold mt-10">
+          <div className="md:text-[48px] text-2xl font-bold mt-10">
             МЕЖДУНАРОДНЫЕ <span className="text-[#30AAE2]">ТЕСТЫ</span>
           </div>
-          <div className="grid grid-cols-3 gap-8 ">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3 ">
             {arr.map((item) => (
-              <div key={item.id} className="bg-white shadow-xl rounded-xl mt-10 z-30">
+              <div key={item.id} className="z-30 mt-10 bg-white shadow-xl rounded-xl">
                 <div className="flex pt-[75px] pb-[40px] items-center">
                   <Image
                     src="/images/linguaskill-logo.png"
@@ -72,7 +72,7 @@ function international() {
                   />
                   <h1 className="text-center w-full text-[30px]">{item.title}</h1>
                 </div>
-                <p className="text-lg text-center px-3">
+                <p className="px-3 text-lg text-center">
                   {item.body}
                 </p>
                 <div className="flex justify-center pt-4 pb-8">

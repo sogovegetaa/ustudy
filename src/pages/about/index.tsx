@@ -20,7 +20,7 @@ function about() {
               О компаний <br />
               <span className="text-[#30AAE2]">"U-Study"</span>
             </div>
-            <div className="w-1/3 text-base pt-[24px]">
+            <div className="md:w-1/3 w-full text-base pt-[24px]">
               Сеть UStudy состоит из 56 региональных центров тестирования,
               расположенных в 3 городах республиканского значения, 14 областных
               центрах, районных центрах и моногородах Республики Казахстан.
@@ -86,7 +86,7 @@ const Container = tw.div`
 container mx-auto
 `;
 const AboutUsBg = tw.div`
-bg-[url('/images/about-usbg.png')] bg-no-repeat	bg-center pt-[20px]
+md:bg-[url('/images/about-usbg.png')] bg-[#F6F6F6] bg-no-repeat	bg-center pt-[20px]
 `;
 const GetConsultation = tw.button`
 bg-[#30AAE2] py-[16px] px-[27px] rounded-full text-white hover:bg-black duration-200 shadow-2xl

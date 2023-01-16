@@ -14,38 +14,38 @@ function ForStudents() {
           width={212}
           height={212}
           alt=""
-          className="absolute top-0 right-[15%] z-10"
+          className="absolute top-0 right-[15%] z-10 hidden md:block"
         />
         <Image
           src="/images/bg-img3.png"
           width={90}
           height={93}
           alt=""
-          className="absolute top-1/2 right-[25%] z-10"
+          className="absolute top-1/2 right-[25%] z-10 hidden md:block"
         />
         <Image
           src="/images/swiper-circle.png"
           width={212}
           height={212}
           alt=""
-          className="absolute bottom-0 z-10 left-1/2"
+          className="absolute bottom-0 z-10 hidden left-1/2 md:block"
         />
         <Image
           src="/images/bg-img.png"
           width={154}
           height={64}
           alt=""
-          className="absolute z-10 left-1/2 top-1/2"
+          className="absolute z-10 hidden left-1/2 top-1/2 md:block"
         />
         <Image
           src="/images/bg-img3.png"
           width={174}
           height={94}
           alt=""
-          className="absolute top-[40%] left-[25%] z-10"
+          className="absolute top-[40%] left-[25%] z-10 hidden md:block"
         />
         <Container>
-          <h1 className="text-[48px] text-[#383736] font-bold uppercase pb-[25px]">
+          <h1 className="text-[48px] text-[#383736] font-bold uppercase pb-[25px] z-50">
             Ученикам
           </h1>
           <ForStudentBlock />
@@ -57,14 +57,14 @@ function ForStudents() {
           width={154}
           height={64}
           alt=""
-          className="absolute z-10 right-[14%] top-[15%]"
+          className="absolute z-10 right-[14%] top-[15%] hidden md:block"
         />
         <Image
           src="/images/bg-img3.png"
           width={90}
           height={93}
           alt=""
-          className="absolute top-[15%] right-[40%] z-10"
+          className="absolute top-[15%] right-[40%] z-10 hidden md:block"
         />
         <Container>
           <h1 className="text-[48px] text-[#383736] font-bold uppercase pb-[25px] mt-10">
@@ -79,14 +79,14 @@ function ForStudents() {
           width={154}
           height={64}
           alt=""
-          className="absolute z-10 left-[2%] top-0"
+          className="absolute z-10 left-[2%] top-0 hidden md:block"
         />
         <Image
           src="/images/bg-img3.png"
           width={180}
           height={186}
           alt=""
-          className="absolute top-0 right-[12%] z-10"
+          className="absolute top-0 right-[12%] z-10 hidden md:block"
         />
         <Container>
           <h1 className="text-[48px] text-[#383736] font-bold uppercase pb-[25px] mt-10">

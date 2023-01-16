@@ -30,22 +30,22 @@ function Tds() {
           width={212}
           height={212}
           alt=""
-          className="absolute top-0 right-0 z-20"
+          className="absolute top-0 right-0 z-20 hidden md:block"
         />
         <Image
           src="/images/swiper-circle.png"
           width={212}
           height={212}
           alt=""
-          className="absolute bottom-0 left-0 z-20"
+          className="absolute bottom-0 left-0 z-20 hidden md:block"
         />
         <Container>
           <div className=" text-[48px] font-bold mt-10">TOEIC/ TFI</div>
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {arr.map((item) => (
               <div
                 key={item.id}
-                className="bg-white shadow-xl rounded-xl mt-12 z-30"
+                className="z-30 mt-12 bg-white shadow-xl rounded-xl"
               >
                 <div className="flex flex-col pt-[64px]">
                   <div className="flex justify-center">

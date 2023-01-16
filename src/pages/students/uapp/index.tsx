@@ -16,31 +16,31 @@ function Uapp() {
           width={72}
           height={75}
           alt=""
-          className="absolute top-0 left-[24%]"
+          className="absolute top-0 left-[24%] hidden md:block"
         />
         <Image
           src="/images/bg-img.png"
           width={150}
           height={64}
           alt=""
-          className="absolute bottom-0 left-[50%]"
+          className="absolute bottom-0 left-[50%] hidden md:block"
         />
         <Image
           src="/images/bg-img.png"
           width={150}
           height={64}
           alt=""
-          className="absolute left-[-75px] top-[45%]"
+          className="absolute left-[-75px] top-[45%] hidden md:block"
         />
         <Image
           src="/images/swiper-circle.png"
           width={212}
           height={212}
           alt=""
-          className="absolute bottom-[-106px] left-[-106px]"
+          className="absolute bottom-[-106px] left-[-106px] hidden md:block"
         />
         <Container>
-          <div className="grid grid-cols-2 gap-12 pt-[118px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-[118px]">
             <div>
               <div className=" text-[48px] font-bold">
                 ЕНТ <span className="text-[#30AAE2]">(UAPP)</span>
@@ -63,7 +63,7 @@ function Uapp() {
                 <LightButton>Пройти оффлайн</LightButton>
               </div>
             </div>
-            <div>
+            <div className='hidden md:block'>
               <Image
                 src="/images/uapp-bg.png"
                 width={540}

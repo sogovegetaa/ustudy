@@ -46,11 +46,11 @@ function AboutBlocks() {
         className="absolute bottom-[15%] left-[10%] z-30"
       />
       <Container>
-        <div className="grid grid-cols-2 gap-8 mb-[25px]">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-8 mb-[25px]">
           {arr.map((item) => (
             <div className="bg-white p-[22px] rounded-xl shadow-xl  z-40">
               <div
-                className="uppercase text-[#30AAE2] text-[36px] font-bold w-[80%]"
+                className="uppercase text-[#30AAE2] md:text-[36px] text-2xl md:text-left text-center font-bold w-[80%]"
                 dangerouslySetInnerHTML={{ __html: `${item.title}` }}
               />
               <p className="pt-[23px] text-[18px] w-[75%] pb-[15px]">

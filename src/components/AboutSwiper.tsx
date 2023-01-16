@@ -19,6 +19,18 @@ function AboutSwiper() {
       modules={[Mousewheel, Navigation]}
       mousewheel={true}
       navigation={true}
+      breakpoints={{
+        
+        350: {
+          width: 350,
+          slidesPerView: 1,
+        },
+        // when window width is >= 768px
+        768: {
+          width: 768,
+          slidesPerView: 2,
+        },
+      }}
      
     >
       <SwiperSlide className="flex flex-wrap">
@@ -133,7 +145,7 @@ function AboutSwiper() {
   );
 }
 const SwiperYear = tw.span`text-4xl font-bold`;
-const SwiperText = tw.span`bg-white shadow-2xl py-[24px] pl-[24px] rounded-xl mt-[25px] text-xl w-[90%]`;
+const SwiperText = tw.span`bg-white shadow-2xl py-[24px] pl-[24px] rounded-xl mt-[25px] text-xl md:w-[90%] w-full`;
 const SwiperLine = tw.div`bg-[#30AAE2] h-[5px] w-full mb-[30px] relative mt-[30px]`;
 
 export default AboutSwiper;
