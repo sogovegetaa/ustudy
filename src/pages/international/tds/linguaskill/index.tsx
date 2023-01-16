@@ -25,9 +25,9 @@ type Props = {
   postData: RootObject[];
 };
 function Linguaskill() {
-  const { register, handleSubmit } = useForm();
 
-  const [table, setTable] = useState(false);
+  const { register, handleSubmit } = useForm();
+  const [table, setTable] = useState(true);
   const [send, setSend] = useState(false);
   const [error, setError] = useState(false);
   const [selectedUdas, setSelectedUdas] = useState<any>();

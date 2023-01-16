@@ -24,7 +24,7 @@ let arr = [
   {
     id: 3,
     title: "Курсы и обучение",
-    link: "#",
+    link: "/courses",
     image: "/images/tests-img3.png",
   },
   {
