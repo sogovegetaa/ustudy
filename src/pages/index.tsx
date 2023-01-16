@@ -1,13 +1,39 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
-import tw from 'twin.macro';
-import Header from '../components/Header';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import Link from 'next/link';
-import Filials from '../components/Filials';
-import Eye from '@mui/icons-material/RemoveRedEyeOutlined';
-import Footer from '../components/Footer';
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import tw from "twin.macro";
+import Header from "../components/Header";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import Link from "next/link";
+import Filials from "../components/Filials";
+import Eye from "@mui/icons-material/RemoveRedEyeOutlined";
+import Footer from "../components/Footer";
+let arr = [
+  {
+    id: 1,
+    title: "Тесты в образований",
+    link: "/education",
+    image: "/images/tests-img1.png",
+  },
+  {
+    id: 2,
+    title: "Международные тесты",
+    link: "/international",
+    image: "/images/tests-img2.png",
+  },
+  {
+    id: 3,
+    title: "Курсы и обучение",
+    link: "#",
+    image: "/images/tests-img3.png",
+  },
+  {
+    id: 4,
+    title: "Пробные тесты",
+    link: "#",
+    image: "/images/tests-img4.png",
+  },
+];
 const Home: NextPage = () => {
   return (
     <>
@@ -33,86 +59,30 @@ const Home: NextPage = () => {
         </div>
         <Container>
           <div className="grid grid-cols-4 gap-8">
-            <TestBlock>
-              <div className="flex items-center justify-between pb-5 text-xl">
-                Тесты в образований
-                <Link href="/education">
-                  <p className="relative p-1 text-sm text-black bg-white rounded-full">
-                    <ArrowForwardIcon />
-                  </p>
-                </Link>
-              </div>
+            {arr.map((item) => (
+              <TestBlock key={item.id}>
+                <div className="flex items-center justify-between pb-5 text-xl">
+                  {item.title}
+                  <Link href={`${item.link}`}>
+                    <p className="relative p-1 text-sm text-black bg-white rounded-full">
+                      <ArrowForwardIcon />
+                    </p>
+                  </Link>
+                </div>
 
-              <div className="flex justify-center pt-[18px]">
-                <Image
-                  src="/images/tests-img1.png"
-                  width={170}
-                  height={170}
-                  alt="test image"
-                />
-              </div>
-            </TestBlock>
-            <TestBlock>
-              <div className="flex items-center justify-between pb-5 text-xl">
-                Международные тесты{' '}
-                <Link href="#">
-                  <p className="relative p-1 text-sm text-black bg-white rounded-full">
-                    <ArrowForwardIcon />
-                  </p>
-                </Link>
-              </div>
-
-              <div className="flex justify-center pt-[18px]">
-                <Image
-                  src="/images/tests-img2.png"
-                  width={170}
-                  height={170}
-                  alt="test image"
-                />
-              </div>
-            </TestBlock>
-            <TestBlock>
-              <div className="flex items-center justify-between pb-5 text-xl">
-                Курсы и обучение{' '}
-                <Link href="#">
-                  <p className="relative p-1 text-sm text-black bg-white rounded-full">
-                    <ArrowForwardIcon />
-                  </p>
-                </Link>
-              </div>
-
-              <div className="flex justify-center pt-[18px]">
-                <Image
-                  src="/images/tests-img3.png"
-                  width={170}
-                  height={170}
-                  alt="test image"
-                />
-              </div>
-            </TestBlock>
-            <TestBlock>
-              <div className="flex items-center justify-between pb-5 text-xl">
-                Пробные тесты{' '}
-                <Link href="#">
-                  <p className="relative p-1 text-sm text-black bg-white rounded-full">
-                    <ArrowForwardIcon />
-                  </p>
-                </Link>
-              </div>
-
-              <div className="flex justify-center pt-[18px]">
-                <Image
-                  src="/images/tests-img4.png"
-                  width={170}
-                  height={170}
-                  alt="test image"
-                />
-              </div>
-            </TestBlock>
+                <div className="flex justify-center pt-[18px]">
+                  <Image
+                    src={`${item.image}`}
+                    width={170}
+                    height={170}
+                    alt="test image"
+                  />
+                </div>
+              </TestBlock>
+            ))}
           </div>
         </Container>
       </div>
-
       <Container>
         <h1 className="text-[55px]  uppercase text-[#383736] font-bold">
           <span className="text-[#30aae2]">О нашей</span> компании
