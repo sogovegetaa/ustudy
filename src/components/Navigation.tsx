@@ -6,6 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 const Navigation = () => {
   const [open, setOpen] = React.useState(false);
   const [navbar, setNavbar] = React.useState(false);
+  navbar?document.body.style.overflow="hidden":document.body.style.overflow="auto"
   return (
     <div className="sticky top-0 z-50 bg-[#F8FBFE]">
       <Container>
