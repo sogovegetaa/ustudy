@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="bg-black py-[38px] z-50 relative mt-12">
+    <div className="bg-black py-[38px] z-50 relative mt-12 md:block hidden">
       <Container>
         <div className="flex items-center justify-between">
           <div>
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         <div className="flex items-center justify-between pt-5">
           <div className="text-center text-white">
-            <InstagramIcon sx={{ marginRight: "10px" }} />{" "}
+            <InstagramIcon sx={{ marginRight: "10px" }} />
             <FacebookIcon sx={{ marginRight: "10px" }} /> <YouTubeIcon />
           </div>
           <div className="text-white">

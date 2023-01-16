@@ -43,7 +43,7 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <Container className="pt-5">
-        <h1 className="text-5xl uppercase text-[#383736] font-bold">
+        <h1 className="md:text-5xl text-3xl uppercase text-[#383736] font-bold">
           Центр тестирования <span className="text-[#30aae2]">"U-STUDY"</span>
         </h1>
       </Container>
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
           <Image src="/images/bg-img3.png" width={63} height={63} alt="" />
         </div>
         <Container>
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:gap-8 md:grid-cols-4">
             {arr.map((item) => (
               <TestBlock key={item.id}>
                 <div className="flex items-center justify-between pb-5 text-xl">
@@ -84,12 +84,12 @@ const Home: NextPage = () => {
         </Container>
       </div>
       <Container>
-        <h1 className="text-[55px]  uppercase text-[#383736] font-bold">
+        <h1 className="md:text-[55px] text-[42px] uppercase text-[#383736] font-bold">
           <span className="text-[#30aae2]">О нашей</span> компании
         </h1>
         <div className="grid grid-cols-3 gap-5">
-          <div className="flex flex-col justify-center">
-            <p className="text-[#383736] col-span-1 text-lg  font-medium">
+          <div className="flex flex-col justify-center col-span-3 md:col-span-1">
+            <p className="text-[#383736]  text-lg  font-medium">
               Сеть UStudy состоит из 56 региональных центров тестирования,
               расположенных в 3 городах республиканского значения, 14 областных
               центрах, районных центрах и моногородах Республики Казахстан.
@@ -97,31 +97,31 @@ const Home: NextPage = () => {
               создание сети инфраструктуры было привлечено более 8 млрд. тенге
               частных инвестиции.
             </p>
-            <div className="flex pt-10 text-lg font-bold uppercase">
+            <div className="flex pt-10 mb-10 text-lg font-bold uppercase md:mb-0">
               <p>Подробнее</p>
               <p className="relative p-1 ml-10 text-sm text-white bg-black rounded-full cursor-pointer">
                 <ArrowForwardIcon />
               </p>
             </div>
           </div>
-          <div className="flex justify-end col-span-2">
+          <div className="flex justify-end hidden col-span-2 md:block">
             <Image src="/images/about-us.png" width={700} height={430} alt="" />
           </div>
         </div>
       </Container>
       <Filials />
       <div className="pt-[120px] relative">
-        <div className="absolute right-[67px] top-[49px] z-30">
+        <div className="absolute right-[67px] top-[49px] z-30 md:block hidden">
           <Image src="/images/bg-dots.png" width={153} height={63} alt="" />
         </div>
-        <div className="absolute bottom-[15%] left-[43px] z-30">
+        <div className="absolute bottom-[15%] left-[43px] z-30 md:block hidden">
           <Image src="/images/bg-dots.png" width={153} height={63} alt="" />
         </div>
         <Container>
-          <h1 className="text-[55px]  uppercase text-[#383736] font-bold pl-12">
+          <h1 className="md:text-[55px] text-[35px]  uppercase text-[#383736] font-bold pl-12">
             Последние <span className="text-[#30aae2]">публикации</span>
           </h1>
-          <div className="grid grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
             <div className="p-12">
               <div className="flex justify-center">
                 <Image
@@ -192,7 +192,7 @@ container
 mx-auto
 `;
 const TestBlock = tw.div`
-bg-[#30AAE2] rounded-2xl pt-[60px] pb-[30px] px-[20px] mt-12 text-white hover:opacity-80 duration-200 z-40
+bg-[#30AAE2] rounded-2xl pt-[60px] pb-[30px] px-[20px] md:mt-12 mt-5 text-white hover:opacity-80 duration-200 z-40
 `;
 
 export default Home;

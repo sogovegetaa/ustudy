@@ -42,7 +42,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-        <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet" />
         </Head>
         <body>
           <Main />

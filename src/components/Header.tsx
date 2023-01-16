@@ -11,50 +11,49 @@ import Image from "next/image";
 const Header = () => {
   return (
     <>
-    <MainHeader>
-      <Container>
-        <InnerHeader>
-          <Image src="/images/Logo.png" width={153} height={57} alt="" />
-          <InfoHeader>
-            <div>
-              <select className="bg-[#f6f6f6]">
-                <option value="">RU</option>
-                <option value="">KZ</option>
-              </select>
-            </div>
-            <div>
-              <Link href="#">+7 (700) 202-93-01</Link>
-            </div>
-            <div className="grid grid-cols-4 gap-5">
-              <InstagramIcon
-                sx={{ color: "#30AAE2" }}
-                className="cursor-pointer hover:scale-125"
-              />
-              <FacebookIcon
-                sx={{ color: "#30AAE2" }}
-                className="cursor-pointer hover:scale-125"
-              />
-              <YouTubeIcon
-                sx={{ color: "#30AAE2" }}
-                className="cursor-pointer hover:scale-125"
-              />
-              <TelegramIcon
-                sx={{ color: "#30AAE2" }}
-                className="cursor-pointer hover:scale-125"
-              />
-            </div>
-          </InfoHeader>
-        </InnerHeader>
-      </Container>
-    </MainHeader>
-    <Navigation />
+      <MainHeader>
+        <Container>
+          <InnerHeader>
+            <Image src="/images/Logo.png" width={153} height={57} alt="" />
+            <InfoHeader>
+              <div>
+                <select className="bg-[#f6f6f6]">
+                  <option value="">RU</option>
+                  <option value="">KZ</option>
+                </select>
+              </div>
+              <div>
+                <Link href="#">+7 (700) 202-93-01</Link>
+              </div>
+              <div className="grid grid-cols-4 gap-5">
+                <InstagramIcon
+                  sx={{ color: "#30AAE2" }}
+                  className="cursor-pointer hover:scale-125"
+                />
+                <FacebookIcon
+                  sx={{ color: "#30AAE2" }}
+                  className="cursor-pointer hover:scale-125"
+                />
+                <YouTubeIcon
+                  sx={{ color: "#30AAE2" }}
+                  className="cursor-pointer hover:scale-125"
+                />
+                <TelegramIcon
+                  sx={{ color: "#30AAE2" }}
+                  className="cursor-pointer hover:scale-125"
+                />
+              </div>
+            </InfoHeader>
+          </InnerHeader>
+        </Container>
+      </MainHeader>
+      <Navigation />
     </>
   );
 };
 const MainHeader = tw.div`
 bg-[#f6f6f6]
 py-[15px]
-font-gotham
 text-lg
 text-[#383736]
 `;
@@ -63,13 +62,12 @@ flex
 justify-between 
 px-[15px]
 items-center
-
+flex-wrap
 `;
 const InfoHeader = tw.div`
 grid
 grid-cols-3 
 gap-5 
-
 `;
 const Container = tw.div`
 container

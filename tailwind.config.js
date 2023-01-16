@@ -6,9 +6,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      gotham: ["Gotham", "sans-serif"],
-    },
+
     extend: {},
     container: {
       padding: {
