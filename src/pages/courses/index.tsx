@@ -45,7 +45,6 @@ function Courses() {
           alt=""
           className="absolute top-[40%] left-[25%] z-10 hidden md:block"
         />
-
       <Container>
         <h1 className="text-[48px] text-[#383736] font-bold uppercase pb-[25px] mt-10">
           Курсы и обучение
