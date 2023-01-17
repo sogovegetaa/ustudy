@@ -103,7 +103,7 @@ const Home: NextPage = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify-end hidden col-span-2 md:block">
+          <div className="flex justify-end hidden col-span-2 mb-12 md:block">
             <Image src="/images/about-us.png" width={700} height={430} alt="" />
           </div>
         </div>
@@ -193,5 +193,4 @@ mx-auto
 const TestBlock = tw.div`
 bg-[#30AAE2] rounded-2xl pt-[60px] pb-[30px] px-[20px] md:mt-12 mt-5 text-white hover:opacity-80 duration-200 z-40
 `;
-
 export default Home;
