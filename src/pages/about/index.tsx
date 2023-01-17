@@ -9,9 +9,14 @@ import AboutSwiper from "../../components/AboutSwiper";
 import AboutBlocks from "../../components/AboutBlocks";
 import Filials from "../../components/Filials";
 import Button from "../../components/Button";
+import Head from "next/head";
 function about() {
   return (
     <div>
+      <Head>
+        <title>О нас</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header />
       <div className="bg-[#f6f6f6] pt-[20px]">
         <AboutUsBg>

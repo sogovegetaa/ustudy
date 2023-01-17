@@ -4,12 +4,16 @@ import Header from "../../components/Header";
 import tw from "twin.macro";
 import Image from "next/image";
 import Footer from "../../components/Footer";
+import Head from "next/head";
 function Courses() {
   return (
     <>
-    <Header />
-    <div className="relative pt-[50px]">
-              
+      <Head>
+        <title>Курсы и обучение</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Header />
+      <div className="relative pt-[50px]">
         <Image
           src="/images/swiper-circle.png"
           width={212}
@@ -45,15 +49,14 @@ function Courses() {
           alt=""
           className="absolute top-[40%] left-[25%] z-10 hidden md:block"
         />
-      <Container>
-        <h1 className="text-[48px] text-[#383736] font-bold uppercase pb-[25px] mt-10">
-          Курсы и обучение
-        </h1>
-        <ForCourses />
-      </Container>
-    
-    </div>
-    <Footer />
+        <Container>
+          <h1 className="text-[48px] text-[#383736] font-bold uppercase pb-[25px] mt-10">
+            Курсы и обучение
+          </h1>
+          <ForCourses />
+        </Container>
+      </div>
+      <Footer />
     </>
   );
 }

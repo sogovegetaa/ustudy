@@ -15,14 +15,12 @@ export default class MyDocument extends Document {
   ): Promise<DocumentInitialProps> {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
-
     try {
       ctx.renderPage = () =>
         originalRenderPage({
           enhanceApp: (App) => (props) =>
             sheet.collectStyles(<App {...props} />),
         });
-
       const initialProps = await Document.getInitialProps(ctx);
       return {
         ...initialProps,
@@ -37,12 +35,10 @@ export default class MyDocument extends Document {
       sheet.seal();
     }
   }
-
   render(): ReactElement {
     return (
       <Html lang="en">
-        <Head>
-        </Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />

@@ -6,7 +6,7 @@ const Filials = () => {
 
 
   return (
-    <div  className="bg-[#383736] md:pt-[52px] pt-[0px] md:pb-[30px] pb-[0px] md:px-[160px] px-[0px]">
+    <div  className="bg-[#383736] md:pt-[52px] pt-[0px] md:pb-[30px] pb-[0px] md:px-[160px] px-[0px]" id="filials">
       <Container>
         <h1 className="text-6xl font-bold text-white">Наши филиалы</h1>
         <div className="grid grid-cols-2 md:grid-cols-5" >

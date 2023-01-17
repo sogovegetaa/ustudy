@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../../components/Footer";
+import Head from "next/head";
 const int = '/international'
 let arr = [
   {
@@ -46,6 +47,9 @@ let arr = [
 function international() {
   return (
     <div>
+      <Head>
+        <title>Международные тесты</title>
+      </Head>
       <Header />
       <Container>
         <div className="relative">

@@ -48,7 +48,7 @@ function AboutBlocks() {
       <Container>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8 mb-[25px]">
           {arr.map((item) => (
-            <div className="bg-white p-[22px] rounded-xl shadow-xl  z-40">
+            <div key={item.title} className="bg-white p-[22px] rounded-xl shadow-xl  z-40">
               <div
                 className="uppercase text-[#30AAE2] md:text-[36px] text-2xl md:text-left text-center font-bold w-[80%]"
                 dangerouslySetInnerHTML={{ __html: `${item.title}` }}

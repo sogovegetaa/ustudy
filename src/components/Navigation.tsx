@@ -66,7 +66,7 @@ const Navigation = () => {
                     <Link href="/about">О нас</Link>
                   </li>
                   <li className="text-lg text-[#3a3b49] cursor-pointer font-medium py-7">
-                    <Link href="#">Филиалы</Link>
+                    <Link href="#filials">Филиалы</Link>
                   </li>
                   <li className="text-lg text-[#3a3b49] cursor-pointer font-medium py-7">
                     <Link href="#">Партнеры</Link>

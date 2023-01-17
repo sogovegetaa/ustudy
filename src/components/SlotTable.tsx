@@ -3,7 +3,8 @@ import tw from 'twin.macro'
 function SlotTable() {
   return (
     <Container>
-        <table className="min-w-full divide-y divide-gray-200">
+        <div className="relative overflow-x-auto">
+        <table className="min-w-full divide-y divide-gray-200 table-auto">
           <thead className="bg-gray-50">
             <tr>
               <TableTh>Город</TableTh>
@@ -123,6 +124,7 @@ function SlotTable() {
             </tr>
           </tbody>
         </table>
+        </div>
       </Container>
   )
 }

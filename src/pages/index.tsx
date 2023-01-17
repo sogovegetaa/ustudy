@@ -30,7 +30,7 @@ let arr = [
   {
     id: 4,
     title: "Пробные тесты",
-    link: "#",
+    link: "/trials",
     image: "/images/tests-img4.png",
   },
 ];
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Главная страница</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
@@ -69,7 +69,6 @@ const Home: NextPage = () => {
                     </p>
                   </Link>
                 </div>
-
                 <div className="flex justify-center pt-[18px]">
                   <Image
                     src={`${item.image}`}

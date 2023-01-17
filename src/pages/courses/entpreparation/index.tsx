@@ -5,9 +5,14 @@ import Footer from "../../../components/Footer";
 import Header from "../../../components/Header";
 import LightButton from "../../../components/LightButton";
 import tw from "twin.macro";
+import Head from "next/head";
 function Entpreparation() {
   return (
     <div>
+      <Head>
+        <title>Курс подготовки к ЕНТ</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header />
       <div className="relative z-40">
         <Image

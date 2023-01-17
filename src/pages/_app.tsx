@@ -16,7 +16,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     Router.events.on('routeChangeError', handleRouteDone);
 
     return () => {
-      // Make sure to remove the event handler on unmount!
       Router.events.off('routeChangeStart', handleRouteStart);
       Router.events.off('routeChangeComplete', handleRouteDone);
       Router.events.off('routeChangeError', handleRouteDone);
