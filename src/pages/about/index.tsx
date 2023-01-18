@@ -25,7 +25,7 @@ function about() {
               О компаний <br />
               <span className="text-[#30AAE2]">"U-Study"</span>
             </div>
-            <div className="md:w-1/3 w-full text-base pt-[24px]">
+            <div className="lg:w-1/2 xl:w-1/3 w-full text-base pt-[24px] md:bg-gray-100 md:p-4 lg:bg-transparent">
               Сеть UStudy состоит из 56 региональных центров тестирования,
               расположенных в 3 городах республиканского значения, 14 областных
               центрах, районных центрах и моногородах Республики Казахстан.

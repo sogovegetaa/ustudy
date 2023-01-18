@@ -14,7 +14,7 @@ const Header = () => {
       <MainHeader>
         <Container>
           <InnerHeader>
-            <Image src="/images/Logo.png" width={153} height={57} alt="" />
+            <Link href="/"><Image src="/images/Logo.png" width={153} height={57} alt="" /></Link>
             <InfoHeader>
               <div>
                 <select className="bg-[#f6f6f6]">

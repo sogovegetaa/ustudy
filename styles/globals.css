@@ -4,5 +4,5 @@
 
 .mapsvg path:hover{
     fill: #30AAE2;
-    cursor: alias;
+    cursor: pointer;
 }

@@ -147,7 +147,7 @@ function AboutSwiper() {
   );
 }
 const SwiperYear = tw.span`text-4xl font-bold`;
-const SwiperText = tw.span`bg-white shadow-2xl py-[24px] pl-[24px] rounded-xl mt-[25px] text-xl md:w-[90%] w-full`;
+const SwiperText = tw.span`bg-white shadow-2xl py-[24px] pl-[24px] rounded-xl mt-[25px] xl:text-xl md:w-[90%] w-full`;
 const SwiperLine = tw.div`bg-[#30AAE2] h-[5px] w-full mb-[30px] relative mt-[30px]`;
 
 export default AboutSwiper;

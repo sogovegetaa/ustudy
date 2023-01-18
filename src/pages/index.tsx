@@ -36,7 +36,7 @@ let arr = [
 ];
 const Home: NextPage = () => {
   return (
-    <>
+    <div>
       <Head>
         <title>Главная страница</title>
         <link rel="icon" href="/favicon.ico" />
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
           <Image src="/images/bg-img3.png" width={63} height={63} alt="" />
         </div>
         <Container>
-          <div className="grid grid-cols-1 md:gap-8 md:grid-cols-4">
+          <div className="grid grid-cols-1 md:gap-8 lg:gap-4 md:grid-cols-2 lg:grid-cols-4">
             {arr.map((item) => (
               <TestBlock key={item.id}>
                 <div className="flex items-center justify-between pb-5 text-xl">
@@ -87,7 +87,7 @@ const Home: NextPage = () => {
           <span className="text-[#30aae2]">О нашей</span> компании
         </h1>
         <div className="grid grid-cols-3 gap-5">
-          <div className="flex flex-col justify-center col-span-3 md:col-span-1">
+          <div className="flex flex-col justify-center 2xl:col-span-2 md:col-span-2">
             <p className="text-[#383736]  text-lg  font-medium">
               Сеть UStudy состоит из 56 региональных центров тестирования,
               расположенных в 3 городах республиканского значения, 14 областных
@@ -96,14 +96,14 @@ const Home: NextPage = () => {
               создание сети инфраструктуры было привлечено более 8 млрд. тенге
               частных инвестиции.
             </p>
-            <div className="flex pt-10 mb-10 text-lg font-bold uppercase md:mb-0">
+            <div className="flex pt-10 mb-10 text-lg font-bold uppercase md:mb-12">
               <p>Подробнее</p>
               <p className="relative p-1 ml-10 text-sm text-white bg-black rounded-full cursor-pointer">
                 <ArrowForwardIcon />
               </p>
             </div>
           </div>
-          <div className="flex justify-end hidden col-span-2 mb-12 md:block">
+          <div className="justify-end hidden mb-12 2xl:col-span-1 md:col-span-1 md:block">
             <Image src="/images/about-us.png" width={700} height={430} alt="" />
           </div>
         </div>
@@ -183,7 +183,7 @@ const Home: NextPage = () => {
         </Container>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 const Container = tw.div`

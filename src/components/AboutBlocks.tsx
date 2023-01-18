@@ -50,7 +50,7 @@ function AboutBlocks() {
           {arr.map((item) => (
             <div key={item.title} className="bg-white p-[22px] rounded-xl shadow-xl  z-40">
               <div
-                className="uppercase text-[#30AAE2] md:text-[36px] text-2xl md:text-left text-center font-bold w-[80%]"
+                className="uppercase text-[#30AAE2] md:text-[24px] xl:text-[36px] md:text-left text-center font-bold w-[80%]"
                 dangerouslySetInnerHTML={{ __html: `${item.title}` }}
               />
               <p className="pt-[23px] text-[18px] w-[75%] pb-[15px]">

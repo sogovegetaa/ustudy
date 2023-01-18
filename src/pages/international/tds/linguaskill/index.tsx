@@ -6,6 +6,7 @@ import Footer from "../../../../components/Footer";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { convertToFormData } from "../../../../helpers";
+
 export interface RootObject {
   fio: string;
   region: string;
@@ -19,23 +20,22 @@ export interface RootObject {
   number: string;
   sex: string;
   country: string;
-  created_date: string;
 }
 type Props = {
   postData: RootObject[];
 };
 function Linguaskill() {
-
   const { register, handleSubmit } = useForm();
   const [table, setTable] = useState(true);
   const [send, setSend] = useState(false);
   const [error, setError] = useState(false);
   const [selectedUdas, setSelectedUdas] = useState<any>();
+  const [sendBtn, setSendBtn] = useState(true)
   const [selectedCheck, setSelectedCheck] = useState<
     (EventTarget & HTMLInputElement) | undefined
   >();
   const Tdate = String(new Date());
-  const url = "http://localhost:3333/urequest";
+  const url = "https://arioapi.pythonanywhere.com/u-api/request/";
   const mockUrl = "https://63765481b5f0e1eb85090bc9.mockapi.io/posts";
   const [data, setData] = useState<RootObject>({
     fio: "",
@@ -50,16 +50,37 @@ function Linguaskill() {
     udostoverenie: null,
     sex: "",
     country: "",
-    created_date: Tdate,
   });
   function submit(data: any) {
     const formData = new FormData();
-    console.log(data);
     convertToFormData(data, formData);
-    console.log(formData);
+    axios.post(url, data, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    })
+    .then((res)=>{
+      console.log(res.data)
+      setSend(true)
+      setTimeout(()=>{
+        setSend(false)
+      },2000)
+    })
+    .catch((err)=>{
+      console.log(err.message)
+      setError(true)
+      setTimeout(()=>{
+        setError(false)
+      },2000)
+    })
   }
+  function sendval() {
+    setSendBtn(false);
+    setTimeout(() => setSendBtn(true), 2000);
+  }
+  
   return (
-    <div>
+    <div className="debug-screens">
       <Header />
       {send && (
         <div
@@ -75,8 +96,7 @@ function Linguaskill() {
           className="fixed p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg top-5 right-5 shadow-xl z-[51]"
           role="alert"
         >
-          <span className="font-medium">Ошибка!</span>Что - то пошло не так,
-          попробуйте позже.
+          <span className="font-medium">Ошибка! Заявка не отправлена, попробуйте позже.</span>
         </div>
       )}
 
@@ -169,10 +189,10 @@ function Linguaskill() {
                     <option value="default" selected>
                       Выберите время
                     </option>
-                    <option value="10" selected>
+                    <option value="10:00">
                       10:00
                     </option>
-                    <option value="15">15:00</option>
+                    <option value="15:00">15:00</option>
                   </SelectField>
                   <div className="absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 pointer-events-none">
                     <svg
@@ -229,14 +249,14 @@ function Linguaskill() {
                 />
               </div>
             </div>
-            <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3">
               <div>
                 <LabelField htmlFor="payment_check">Чек o6 оплате</LabelField>
                 <FileField
                   id="payment_check"
                   type="file"
                   {...register("payment_check")}
-                  // onChange={(e) => setSelectedCheck(e.target.files[0])}
+                  
                 />
               </div>
               <div>
@@ -247,12 +267,12 @@ function Linguaskill() {
                   id="udostoverenie"
                   type="file"
                   {...register("udostoverenie")}
-                  // onChange={(e) => setSelectedUdas(e.target.files[0])}
+                  
                 />
               </div>
             </div>
             <div className="w-full my-12">
-              <ButtonTable>Отправить</ButtonTable>
+              <ButtonTable><div onClick={sendval}>{sendBtn ? <p>Отправить</p> : <p>Идет отправка</p>}</div></ButtonTable>
             </div>
           </form>
         </div>
@@ -267,6 +287,6 @@ const Container = tw.div`container mx-auto`;
 const TextField = tw.input`appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500`;
 const LabelField = tw.label`block uppercase tracking-wide text-gray-700 text-base font-bold mb-2`;
 const SelectField = tw.select`block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500`;
-const FileField = tw.input`border border-2 border-[#30AAE2] border-dashed p-8`;
+const FileField = tw.input`border-2 border-[#30AAE2] border-dashed xl:p-8 lg:p-4 xl:w-full lg:w-11/12 md:p-4 md:w-full sm:p-5 sm:w-full`;
 const ButtonTable = tw.button`bg-[#30AAE2] py-[16px] cursor-pointer px-[27px] rounded-xl text-white hover:bg-white border border-[#30AAE2] hover:text-[#30AAE2] duration-200 shadow-2xl mr-8`;
 export default Linguaskill;

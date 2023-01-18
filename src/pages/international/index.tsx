@@ -63,7 +63,7 @@ function international() {
           <div className="md:text-[48px] text-2xl font-bold mt-10">
             МЕЖДУНАРОДНЫЕ <span className="text-[#30AAE2]">ТЕСТЫ</span>
           </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3 ">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 ">
             {arr.map((item) => (
               <div key={item.id} className="z-30 mt-10 bg-white shadow-xl rounded-xl">
                 <div className="flex pt-[75px] pb-[40px] items-center">
