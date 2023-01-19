@@ -47,12 +47,12 @@ function news({ data, users }: Props) {
     <div className="grid grid-cols-2 gap-10">
       <div>
       {data.map((item: Post) => (
-        <div key={item.title}>{item.title}</div>
+        <div key={item.id}>{item.title}</div>
       ))}
       </div>
       <div>
         {users.map((obj)=>(
-          <div key={obj.name}>{obj.name} {obj.company.name}</div>
+          <div key={obj.id}>{obj.name} {obj.company.name}</div>
         ))}
       </div>
     </div>

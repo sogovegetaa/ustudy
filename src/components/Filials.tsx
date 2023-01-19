@@ -63,7 +63,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: ул. Жеңіс, 86
                   </p>
-                  <p className="py-1 font-medium text-white">тел.:</p>
+                  
                 </div>
                 <div className="pt-3">
                   <div className="py-1 text-xl font-medium text-white">
@@ -72,7 +72,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: проспект аль-Фараби, 71/22
                   </p>
-                  <p className="py-1 font-medium text-white">тел.:</p>
+                  
                 </div>
                 <div className="pt-3">
                   <div className="py-1 text-xl font-medium text-white">
@@ -81,7 +81,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: ул. Наурыз, 62 (школа им. А. Букарбая)
                   </p>
-                  <p className="py-1 font-medium text-white">тел.:</p>
+                  
                 </div>
               </div>
             )}
@@ -97,7 +97,7 @@ const Filials = () => {
                 <p className="py-1 font-medium text-white">
                   Адрес: ул. А.Жангелдина, 89А
                 </p>
-                <p className="py-1 font-medium text-white">тел.:</p>
+                
               </div>
               <div className="pt-3">
                 <div className="py-1 text-xl font-medium text-white">
@@ -106,7 +106,7 @@ const Filials = () => {
                 <p className="py-1 font-medium text-white">
                   Адрес: проспект Санкибай батыра,16/2
                 </p>
-                <p className="py-1 font-medium text-white">тел.:</p>
+                
               </div>
             </div>
             )}
@@ -122,7 +122,7 @@ const Filials = () => {
                 <p className="py-1 font-medium text-white">
                   Адрес: улица 217, здание 42 (№16 школа имени Д. Жазыкбаева)
                 </p>
-                <p className="py-1 font-medium text-white">тел.:</p>
+                
               </div>
               <div className="pt-3">
                 <div className="py-1 text-xl font-medium text-white">
@@ -131,7 +131,7 @@ const Filials = () => {
                 <p className="py-1 font-medium text-white">
                   Адрес: мкр.Нурсая, 78
                 </p>
-                <p className="py-1 font-medium text-white">тел.:</p>
+                
               </div>
             </div>
             )}
@@ -147,7 +147,7 @@ const Filials = () => {
                 <p className="py-1 font-medium text-white">
                   Адрес: ул. Жастар, 29
                 </p>
-                <p className="py-1 font-medium text-white">тел.:</p>
+                
               </div>
               <div className="pt-3">
                 <div className="py-1 text-xl font-medium text-white">
@@ -156,7 +156,7 @@ const Filials = () => {
                 <p className="py-1 font-medium text-white">
                   Адрес: улица Хусаинова 131/1 а
                 </p>
-                <p className="py-1 font-medium text-white">тел.:</p>
+                
               </div>
             </div>
             )}
@@ -172,9 +172,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес:  ул. Косай ата, 15
                   </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
                 <div className="pt-3">
                   <div className="py-1 text-xl font-medium text-white">
@@ -183,9 +181,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: микрорайон Арай, Отырар, 65а
                     </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
               </div>
             )}
@@ -201,9 +197,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес:  улица Н. Назарбаева 86/2 (КАСУ)
                   </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
               </div>
             )}
@@ -219,9 +213,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: ул. Кунаева, 92
                   </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
               </div>
             )}
@@ -237,9 +229,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес:  ул. Жуниса Абугалиева, 7
                   </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
                 <div className="pt-3">
                   <div className="py-1 text-xl font-medium text-white">
@@ -248,9 +238,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: улица Роза Багланова, 5 
                     </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
               </div>
             )}
@@ -266,9 +254,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: ул. Урзимата Мадиева, 51 (№110 школа-лицей)
                   </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
                 <div className="pt-3">
                   <div className="py-1 text-xl font-medium text-white">
@@ -277,9 +263,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: улица Роза Багланова, 5 
                     </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
               </div>
             )}
@@ -295,9 +279,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: ул.М.Озтурик №13 (КГУ СШ №8 им.Алпамыс батыра)
                   </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
                 <div className="pt-3">
                   <div className="py-1 text-xl font-medium text-white">
@@ -306,9 +288,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: микрорайон Север, 66/2
                     </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
                 <div className="pt-3">
                   <div className="py-1 text-xl font-medium text-white">
@@ -317,9 +297,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: улица Бекзата Саттарханова, 49А
                     </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
                 <div className="pt-3">
                   <div className="py-1 text-xl font-medium text-white">
@@ -328,9 +306,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: ул. Жамансариева, 2
                     </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
                 <div className="pt-3">
                   <div className="py-1 text-xl font-medium text-white">
@@ -339,9 +315,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: ул. Токпанбетова, 1а (IT школа-лицей)
                     </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
               </div>
             )}
@@ -357,9 +331,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: ул. Абая, 74
                   </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
                 <div className="pt-3">
                   <div className="py-1 text-xl font-medium text-white">
@@ -368,9 +340,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: улица Тәуелсіздік, 118 (2 этаж)
                     </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
               </div>
             )}
@@ -386,9 +356,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: ул. Энергетиктер, 54А
                   </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
                 <div className="pt-3">
                   <div className="py-1 text-xl font-medium text-white">
@@ -397,9 +365,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: улица М.Горького, 120/2 (Научная библиотека)
                     </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
               </div>
             )}
@@ -415,9 +381,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: ул. Ауельбекова, 2а
                   </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
                 <div className="pt-3">
                   <div className="py-1 text-xl font-medium text-white">
@@ -426,9 +390,7 @@ const Filials = () => {
                   <p className="py-1 font-medium text-white">
                     Адрес: улица Конституции Казахстана, 60
                     </p>
-                  <p className="py-1 font-medium text-white">
-                    тел.: 
-                  </p>
+                  
                 </div>
               </div>
             )}

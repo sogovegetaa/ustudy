@@ -87,7 +87,7 @@ const Home: NextPage = () => {
           <span className="text-[#30aae2]">О нашей</span> компании
         </h1>
         <div className="grid grid-cols-3 gap-5">
-          <div className="flex flex-col justify-center 2xl:col-span-2 md:col-span-2">
+          <div className="flex flex-col justify-center 2xl:col-span-2 md:col-span-2 sm:col-span-3">
             <p className="text-[#383736]  text-lg  font-medium">
               Сеть UStudy состоит из 56 региональных центров тестирования,
               расположенных в 3 городах республиканского значения, 14 областных
@@ -121,7 +121,7 @@ const Home: NextPage = () => {
             Последние <span className="text-[#30aae2]">публикации</span>
           </h1>
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-            <div className="p-12">
+            <div className="p-12 md:p-4 lg:p-8 xl:p-12">
               <div className="flex justify-center">
                 <Image
                   src="/images/news1.png"
@@ -150,7 +150,7 @@ const Home: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className="p-12">
+            <div className="p-12 md:p-4 lg:p-8 xl:p-12">
               <div className="flex justify-center">
                 <Image
                   src="/images/news2.png"

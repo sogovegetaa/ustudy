@@ -59,8 +59,8 @@ function Uapp() {
                 пакетные предложения
               </p>
               <div className="flex mb-[200px]">
-                <Button>Пройти онлайн</Button>
-                <LightButton>Пройти оффлайн</LightButton>
+                <Link href="https://uapp.kz/" target="_blank"><Button>Пройти онлайн</Button></Link>
+                <Link href="/students/uapp/uapppost"><LightButton>Пройти оффлайн</LightButton></Link>
               </div>
             </div>
             <div className='hidden md:block'>

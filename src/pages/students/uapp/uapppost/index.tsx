@@ -24,7 +24,7 @@ export interface RootObject {
 type Props = {
   postData: RootObject[];
 };
-function Linguaskill() {
+function Uapppost() {
   const { register, handleSubmit, formState } = useForm();
   const [table, setTable] = useState(true);
   const [send, setSend] = useState(false);
@@ -38,7 +38,6 @@ function Linguaskill() {
   >();
   const Tdate = String(new Date());
   const url = "https://arioapi.pythonanywhere.com/u-api/request/";
-  const mockUrl = "https://63765481b5f0e1eb85090bc9.mockapi.io/posts";
   const [data, setData] = useState<RootObject>({
     fio: "",
     region: "",
@@ -56,7 +55,7 @@ function Linguaskill() {
   
   function submit(data: any) {
     const formData = new FormData();
-    formData.append("tests", "Linguaskill")
+    formData.append("tests", "ЕНТ Uapp")
     convertToFormData(data, formData);
     axios
       .post(url, formData, {
@@ -107,7 +106,7 @@ function Linguaskill() {
         </div>
       )}
 
-      <Container>
+      {/* <Container>
         <div
           className="flex items-center bg-[#30AAE2] text-white text-md font-bold px-4 py-3 mb-8 "
           role="alert"
@@ -134,8 +133,8 @@ function Linguaskill() {
           <div className="px-4 py-4 my-6 border border-gray-200">
             <SlotTable />
           </div>
-        )}
-      </Container>
+        )} *
+      </Container> */}
 
       <Container>
         <div className="flex justify-center">
@@ -325,4 +324,4 @@ const LabelField = tw.label`block uppercase tracking-wide text-gray-700 text-bas
 const SelectField = tw.select`block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500`;
 const FileField = tw.input`border-2 border-[#30AAE2] border-dashed xl:p-8 lg:p-4 xl:w-full lg:w-11/12 md:p-4 md:w-full sm:p-5 sm:w-full`;
 const ButtonTable = tw.button`bg-[#30AAE2] py-[16px] cursor-pointer px-[27px] rounded-xl text-white hover:bg-white border border-[#30AAE2] hover:text-[#30AAE2] duration-200 shadow-2xl mr-8`;
-export default Linguaskill;
+export default Uapppost;
