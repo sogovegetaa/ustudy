@@ -64,7 +64,7 @@ function Nkt() {
               </p>
               <div className="flex mb-[200px] ">
                 <Button>Пройти онлайн</Button>
-                <LightButton>Пройти оффлайн</LightButton>
+                <Link href="/teachers/nkt/nkt-post"><LightButton>Пройти оффлайн</LightButton></Link>
               </div>
             </div>
             <div className="hidden md:col-span-5 md:block">

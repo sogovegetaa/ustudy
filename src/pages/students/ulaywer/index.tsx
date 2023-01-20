@@ -1,11 +1,11 @@
-import React from 'react';
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
-import tw from 'twin.macro';
-import Image from 'next/image';
-import Link from 'next/link';
-import Button from '../../../components/Button';
-import LightButton from '../../../components/LightButton';
+import React from "react";
+import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
+import tw from "twin.macro";
+import Image from "next/image";
+import Link from "next/link";
+import Button from "../../../components/Button";
+import LightButton from "../../../components/LightButton";
 function Magistracy() {
   return (
     <div>
@@ -43,20 +43,23 @@ function Magistracy() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pt-[118px]">
             <div className="md:col-span-7">
               <div className="text-4xl font-bold ">
-                Тест для юристов на знание законодательства РК{' '}
+                Тест для юристов на знание законодательства РК{" "}
                 <span className="text-[#30AAE2]">ULawyer</span>
               </div>
               <p className="mb-8 text-xl font-medium">
                 <br />
-                
                 <br /> <br />
                 Онлайн - 700 тг, сайт:
                 <br />
                 Офлайн – 3 063 тг
               </p>
               <div className="flex mb-[200px] ">
-                <Button>Пройти онлайн</Button>
-                <LightButton>Пройти оффлайн</LightButton>
+                <Link href="https://lawyer.ustudy.kz/#/auth">
+                  <Button>Пройти онлайн</Button>
+                </Link>
+                <Link href="/students/ulaywer/ulaywer-post">
+                  <LightButton>Пройти оффлайн</LightButton>
+                </Link>
               </div>
             </div>
             <div className="hidden md:col-span-5 md:block">

@@ -1,11 +1,11 @@
-import React from 'react';
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
-import tw from 'twin.macro';
-import Image from 'next/image';
-import Link from 'next/link';
-import Button from '../../../components/Button';
-import LightButton from '../../../components/LightButton';
+import React from "react";
+import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
+import tw from "twin.macro";
+import Image from "next/image";
+import Link from "next/link";
+import Button from "../../../components/Button";
+import LightButton from "../../../components/LightButton";
 function Modo() {
   return (
     <div>
@@ -51,19 +51,21 @@ function Modo() {
                 <br />
                 МОДО включает в себя обработку и системный анализ результатов
                 тестирования с последующим оказанием методической помощи и
-                выработкой рекомендаций по обеспечению качества образования.{' '}
+                выработкой рекомендаций по обеспечению качества образования.{" "}
                 <br /> <br />
                 Онлайн - 1 000 тг, сайт:
                 <Link href="https://uapp.kz/login" target="_blank">
                   <span className="text-[#30AAE2]">https://u-edu.kz/ </span>
-                </Link>{' '}
+                </Link>{" "}
                 <br />
                 предусмотрены пакетные предложения
               </p>
 
               <div className="flex mb-[200px] ">
                 <Button>Пройти онлайн</Button>
-                <LightButton>Пройти оффлайн</LightButton>
+                <Link href="/students/modo/modo-post">
+                  <LightButton>Пройти оффлайн</LightButton>
+                </Link>
               </div>
             </div>
             <div className="hidden md:col-span-5 md:block">

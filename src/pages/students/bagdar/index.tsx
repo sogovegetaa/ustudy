@@ -79,7 +79,7 @@ function Bagdar() {
 
               <div className="flex mb-[200px] ">
                 <Button>Пройти онлайн</Button>
-                <LightButton>Пройти оффлайн</LightButton>
+                <Link href="/students/bagdar/bagdar-post"><LightButton>Пройти оффлайн</LightButton></Link>
               </div>
             </div>
             <div className="hidden md:col-span-6 md:block">

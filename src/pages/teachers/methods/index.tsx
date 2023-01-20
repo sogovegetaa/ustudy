@@ -57,7 +57,7 @@ function Methods() {
                 предусмотрены пакетные предложения
               </p>
               <div className="flex mb-[200px] ">
-                <Button>Пройти тест</Button>
+              <Link href="http://uapp.kz/login" target="_blank"><Button>Пройти тест</Button> </Link>
                 
               </div>
             </div>

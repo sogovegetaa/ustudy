@@ -64,7 +64,7 @@ function Reserve() {
                 Пробные тесты по ЛИНКУ (офлайн) – 5 000 тг
               </p>
               <div className="flex mb-[200px] ">
-                <Button>Пройти тест</Button>
+              <Link href="http://uapp.kz/login" target="_blank"><Button>Пройти тест</Button></Link>
               </div>
             </div>
             <div className="hidden md:col-span-5 md:block">
