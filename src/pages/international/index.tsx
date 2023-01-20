@@ -33,14 +33,14 @@ let arr = [
   },
   {
     id: 5,
-    title: "TOEIC/ TFI",
-    body: "Тест на знание французского языка TFI, TOEIC",
+    title: "TOEIC/Linguaskill",
+    body: "Тест на знание французского языка Linguaskill, TOEIC",
     link: `${int}/toeictfi`,
   },
   {
     id: 6,
-    title: "TDS/Linguaskill",
-    body: "Регистрация на международные тесты TSD, Linguaskill",
+    title: "TDS/ TFI",
+    body: "Регистрация на международные тесты TSD, TFI",
     link: `${int}/tds`,
   },
 ];

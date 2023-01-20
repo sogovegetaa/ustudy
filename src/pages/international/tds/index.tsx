@@ -40,7 +40,7 @@ function Tds() {
           className="absolute bottom-0 left-0 z-20 hidden md:block"
         />
         <Container>
-          <div className=" text-[48px] font-bold mt-10">TOEIC/ TFI</div>
+          <div className=" text-[48px] font-bold mt-10">TDS / Linguaskill</div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {arr.map((item) => (
               <div

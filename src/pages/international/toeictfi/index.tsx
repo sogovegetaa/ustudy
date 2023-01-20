@@ -47,7 +47,7 @@ function Toeictfi() {
           className="absolute bottom-0 left-0 z-20 hidden md:block"
         />
         <Container>
-          <div className=" text-[48px] font-bold mt-10">TOEIC/ TFI</div>
+          <div className=" text-[48px] font-bold mt-10">TOEIC / TFI</div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {arr.map((item) => (
               <div key={item.id} className="z-30 mt-12 bg-white shadow-xl rounded-xl">
