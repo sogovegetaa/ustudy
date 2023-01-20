@@ -10,21 +10,21 @@ let arr = [
     title: "Тест на знание французского языка TFI",
     body: "От 14 лет и старше (в основном для поступающих в вузы и миграцию), изучающих французский язык",
     price: "45 000 тг",
-    link: "#",
+    link: "/international/toeictfi/franche",
   },
   {
     id: 2,
     title: "Тест Toeic Listening and Reading Test",
     body: "От 14 лет и старше (в основном для поступающих в вузы и магистратуру), изучающих английский язык",
     price: "45 000 тг",
-    link: "#",
+    link: "/international/toeictfi/reading",
   },
   {
     id: 3,
     title: "TOEIC Speaking and Writing Test",
     body: "От 14 лет и старше (в основном для поступающих в вузы и магистратуру), изучающих английский язык",
     price: "45 000 тг",
-    link: "#",
+    link: "/international/toeictfi/speaking",
   },
 ];
 function Toeictfi() {

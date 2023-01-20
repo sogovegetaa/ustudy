@@ -60,7 +60,8 @@ function Toeflitp() {
                 Стоимость - 45 000 тг
               </p>
               <div className="flex mb-[200px] ">
-                <Button>Зарегистрироваться</Button>
+                <Link href="/international/toeflitp/toeflitppost"><Button>Зарегистрироваться</Button></Link>
+                
               </div>
             </div>
             <div className="hidden md:col-span-5 md:block">

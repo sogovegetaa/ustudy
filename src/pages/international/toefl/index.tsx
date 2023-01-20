@@ -10,28 +10,28 @@ let arr = [
     title: "Тесты TOEFL Primary",
     body: "Для детей от 8 до 11 лет, изучающих английский язык",
     price: "45 000 тг",
-    link: "#",
+    link: "/international/toefl/primary",
   },
   {
     id: 2,
     title: "Тесты TOEFL Junior Standard",
     body: "Для детей от 11 лет, изучающих английский язык",
     price: "45 000 тг",
-    link: "#",
+    link: "/international/toefl/junior-standart",
   },
   {
     id: 3,
     title: "Обучающий материал TOEFL Primary ELC",
     body: "Для детей от 8 до 11 лет, изучающих английский язык",
     price: "45 000 тг",
-    link: "#",
+    link: "/international/toefl/primary-elc",
   },
   {
     id: 4,
     title: "Обучающий материал TOEFL Junior ELC",
     body: "Для детей от 11 лет, изучающих английский язык",
     price: "45 000 тг",
-    link: "#",
+    link: "/international/toefl/junior-elc",
   },
 ];
 function Toefl() {

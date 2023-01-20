@@ -69,7 +69,8 @@ function Ielts() {
               </p>
 
               <div className="flex mb-[200px] ">
-                <Button>Зарегистрироваться</Button>
+                <Link href="/international/ielts/ieltspost"><Button>Зарегистрироваться</Button></Link>
+                
               </div>
             </div>
             <div className="hidden md:col-span-5 md:block">

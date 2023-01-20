@@ -153,13 +153,36 @@ function Linguaskill() {
               </div>
               <div className="w-full px-3 md:w-1/3">
                 <LabelField htmlFor="region">Регион</LabelField>
-                <TextField
-                  id="region"
-                  type="text"
-                  placeholder="Введите регион"
-                  {...register("region")}
-                  required
-                />
+                <div className="relative">
+                <SelectField id="region" {...register("region")} required>
+                    <option value="" selected>
+                      Выберите регион
+                    </option>
+                    <option value="Алматинская область">Алматинская область</option>
+                    <option value="Восточно-Казахстанская область">Восточно-Казахстанская область</option>
+                    <option value="Карагандинская область">Карагандинская область</option>
+                    <option value="Жамбылская область">Жамбылская область</option>
+                    <option value="Южно-Казахстанская область">Южно-Казахстанская область</option>
+                    <option value="Кызылординская область">Кызылординская область</option>
+                    <option value="Актюбинская область">Актюбинская область</option>
+                    <option value="Костанайская область">Костанайская область</option>
+                    <option value="Северо-Казахстанская область">Северо-Казахстанская область</option>
+                    <option value="Акмолинская область">Акмолинская область</option>
+                    <option value="Павлодарская область">Павлодарская область</option>
+                    <option value="Западно-Казахстанская область">Западно-Казахстанская область</option>
+                    <option value="Атырауская область">Атырауская область</option>
+                    <option value="Мангистауская область">Мангистауская область</option>
+                  </SelectField>
+                  <div className="absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 pointer-events-none">
+                    <svg
+                      className="w-4 h-4 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </div>
+                  </div>
               </div>
               <div className="w-full px-3 md:w-1/3">
                 <LabelField htmlFor="iin">ИИН</LabelField>
@@ -298,7 +321,7 @@ const ErrorAlertWindow = tw.div`bg-red-500 fixed top-5 right-5 w-[250px] z-[51] 
 const Container = tw.div`container mx-auto`;
 const TextField = tw.input`appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500`;
 const LabelField = tw.label`block uppercase tracking-wide text-gray-700 text-base font-bold mb-2`;
-const SelectField = tw.select`block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500`;
+const SelectField = tw.select` block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500`;
 const FileField = tw.input`border-2 border-[#30AAE2] border-dashed xl:p-8 lg:p-4 xl:w-full lg:w-11/12 md:p-4 md:w-full sm:p-5 sm:w-full`;
 const ButtonTable = tw.button`bg-[#30AAE2] py-[16px] cursor-pointer px-[27px] rounded-xl text-white hover:bg-white border border-[#30AAE2] hover:text-[#30AAE2] duration-200 shadow-2xl mr-8`;
 export default Linguaskill;

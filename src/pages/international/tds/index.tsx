@@ -17,7 +17,7 @@ let arr = [
     title: "TDS",
     body: "Тестирование на знание турецкого языка для поступления в ВУЗы Турции",
     price: "130 долларов (основной) 20 долларов (пробный)",
-    link: "#",
+    link: "/international/tds/tdspost",
   },
 ];
 function Tds() {
