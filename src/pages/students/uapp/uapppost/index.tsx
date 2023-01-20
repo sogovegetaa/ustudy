@@ -37,7 +37,7 @@ function Uapppost() {
     (EventTarget & HTMLInputElement) | undefined
   >();
   const Tdate = String(new Date());
-  const url = "https://arioapi.pythonanywhere.com/u-api/request/";
+  const url = "https://arioapi.pythonanywhere.com/u-api/international/";
   const [data, setData] = useState<RootObject>({
     fio: "",
     region: "",

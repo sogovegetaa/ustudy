@@ -37,7 +37,7 @@ function Juniorstandart() {
     (EventTarget & HTMLInputElement) | undefined
   >();
   const Tdate = String(new Date());
-  const url = "https://arioapi.pythonanywhere.com/u-api/request/";
+  const url = "https://arioapi.pythonanywhere.com/u-api/international/";
   const mockUrl = "https://63765481b5f0e1eb85090bc9.mockapi.io/posts";
   const [data, setData] = useState<RootObject>({
     fio: "",
