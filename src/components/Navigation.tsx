@@ -59,22 +59,22 @@ const Navigation = () => {
                 }`}
               >
                 <ul className="items-center justify-between space-y-8 md:flex md:space-x-6 md:space-y-0">
-                  <li className="text-lg text-[#3a3b49] cursor-pointer font-medium py-7">
+                  <li className="text-lg text-[#3a3b49] hover:scale-110 duration-200 cursor-pointer font-medium py-7">
                     <Link href="/">Главная</Link>
                   </li>
-                  <li className="text-lg text-[#3a3b49] cursor-pointer font-medium py-7">
+                  <li className="text-lg text-[#3a3b49] hover:scale-110 duration-200 cursor-pointer font-medium py-7">
                     <Link href="/about">О нас</Link>
                   </li>
-                  <li className="text-lg text-[#3a3b49] cursor-pointer font-medium py-7">
+                  <li className="text-lg text-[#3a3b49] hover:scale-110 duration-200 cursor-pointer font-medium py-7">
                     <Link href="#filials">Филиалы</Link>
                   </li>
-                  <li className="text-lg text-[#3a3b49] cursor-pointer font-medium py-7">
+                  <li className="text-lg text-[#3a3b49] hover:scale-110 duration-200 cursor-pointer font-medium py-7">
                     <Link href="#">Партнеры</Link>
                   </li>
-                  <li className="text-lg text-[#3a3b49] cursor-pointer font-medium py-7">
+                  <li className="text-lg text-[#3a3b49] hover:scale-110 duration-200 cursor-pointer font-medium py-7">
                     <Link href="#">Новости</Link>
                   </li>
-                  <li className="text-lg text-[#3a3b49] cursor-pointer font-medium py-7">
+                  <li className="text-lg text-[#3a3b49] hover:scale-110 duration-200 cursor-pointer font-medium py-7">
                     <Link href="#">Контакты</Link>
                   </li>
                 </ul>
